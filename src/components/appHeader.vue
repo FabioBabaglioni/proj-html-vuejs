@@ -83,7 +83,7 @@ export default {
 #background {
     background-image: url("../img/home-background-hero-scaled.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     position: relative;
 
     .container_hero {

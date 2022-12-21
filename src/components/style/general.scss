@@ -1,3 +1,4 @@
+@use "./partials/variables.scss" as *;
 // Variable overrides first
 $primary: #900;
 $enable-shadows: true;
@@ -5,6 +6,7 @@ $prefix: "mo-";
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 * {
     font-family: 'Rubik', sans-serif;

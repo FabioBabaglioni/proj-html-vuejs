@@ -18,8 +18,8 @@ export default {
                 </div>
 
                 <!-- navigazione sito con riferimento ai data-->
-                <div class="col-8">
-                    <ul class="d-flex justify-content-around">
+                <div class="col-8 d-flex align-items-center">
+                    <ul class="d-flex justify-content-around info">
                         <li class=" active">Home v</li>
                         <li class="">Order Online</li>
                         <li class="">About</li>
@@ -51,6 +51,11 @@ export default {
 
     img {
         width: 60%;
+    }
+
+    .info {
+        margin: 0;
+        width: 100%;
     }
 
     .active {

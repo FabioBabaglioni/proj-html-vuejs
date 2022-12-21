@@ -1,10 +1,12 @@
 <script>
 import footerNavigazione from "./footerNavigazione.vue"
+import footerSubscribe from "./footerSubscribe.vue"
+
 
 
 export default {
     components: {
-        footerNavigazione
+        footerNavigazione, footerSubscribe
     }
 }
 </script>
@@ -18,12 +20,12 @@ export default {
             <!-- navigazione li -->
             <footerNavigazione />
 
-        </div>
-
-        <!-- sezione subscribe in altro componente-->
-        <div>
+            <!-- sezione subscribe in altro componente-->
+            <footerSubscribe />
 
         </div>
+
+
     </section>
 </template>
 

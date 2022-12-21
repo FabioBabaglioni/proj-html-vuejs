@@ -25,6 +25,7 @@ export default {
                         <li class="">About</li>
                         <li class="">News</li>
                         <li class="">Contact Us</li>
+                        <li><font-awesome-icon icon="fa-solid fa-cart-shopping" /></li>
                     </ul>
                 </div>
             </div>

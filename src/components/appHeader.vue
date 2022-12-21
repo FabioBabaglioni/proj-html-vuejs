@@ -25,11 +25,11 @@ export default {
                     <div class="text_big">Delivered</div>
 
                     <!-- button -->
-                    <button class="btn_red btn_medium mt-4">View our menù</button>
+                    <button class="btn_red btn_medium mt-4">
+                        <span>View our menù</span>
+                        <span class="ps-2"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
+                    </button>
                 </div>
-
-
-
             </div>
         </div>
 

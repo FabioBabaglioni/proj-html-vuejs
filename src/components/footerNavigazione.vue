@@ -139,12 +139,15 @@ export default {
         <ul class="pt-4">
             <li class="pb-4" v-for="(info, index) in informations" :key="index"><a :href="info.href">{{ info.li }}</a>
             </li>
+            <!-- <li>
+                <a href="#"><img class="badge_small pb-2" src="../img/app-store-badge-200x67.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img class="badge_small" src="../img/play-store-badge-200x67.png" alt=""></a>
+            </li> -->
         </ul>
-        <!-- <div>
-            <a href="#"><img class="badge_small pb-2" src="../img/app-store-badge-200x67.png" alt=""></a> <br>
-            <a href="#"><img class="badge_small" src="../img/play-store-badge-200x67.png" alt=""></a>
-        </div> -->
     </div>
+
     <div>
         <span>OPENING HOURS</span>
         <ul class="pt-4">
@@ -154,11 +157,14 @@ export default {
             </li>
         </ul>
     </div>
-    <div>
-        <span>VOUCER</span>
-        <ul>
-            <li>{{ }}</li>
-        </ul>
+    <div class="text-center">
+        <div class="pb-4">VOUCER</div>
+        <div>
+            <img class="badge_small" src="../img/footer-coupon-200x200.png" alt="">
+        </div>
+        <div>justUseTheCode</div>
+        <div id="col_yellow">FIRSTORDER</div>
+        <div>At checkout</div>
     </div>
 
 
@@ -191,5 +197,9 @@ ul {
 
 .badge_small {
     width: 60%;
+}
+
+#col_yellow {
+    color: $brandPrimary;
 }
 </style>

@@ -27,7 +27,7 @@ export default {
                     <!-- button -->
                     <button class="btn_red btn_medium mt-4">
                         <span>View our menù</span>
-                        <span class="ps-2"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
+                        <span class="ps-2 icona"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
                     </button>
                 </div>
             </div>

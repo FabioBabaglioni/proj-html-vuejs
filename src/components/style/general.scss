@@ -17,16 +17,20 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container_site {
     width: 70%;
     margin: 0 auto;
 }
 
 .btn_red {
-    background-color: #cc1a26;
+    background-color: $brandThird;
     border-radius: 40px;
-    border: solid 1px #cc1a26;
-    color: white;
+    border: solid 1px $brandThird;
+    color: $brandSecondary;
 }
 
 .btn_medium {

@@ -1,7 +1,11 @@
 <script>
+import footerNavigazione from "./footerNavigazione.vue"
+
 
 export default {
-
+    components: {
+        footerNavigazione
+    }
 }
 </script>
 
@@ -9,9 +13,10 @@ export default {
     <!-- sezione per inserire il background -->
     <section id="background">
         <!-- sezione per rimpicciolire la width -->
-        <div class="container_big">
+        <div class="container_big d-flex justify-content-between">
 
-            <!-- serie di ul con li  -->
+            <!-- navigazione li -->
+            <footerNavigazione />
 
         </div>
 
@@ -23,5 +28,24 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "./style/partials/variables.scss" as *;
 
+section {
+    color: $brandSecondary;
+}
+
+#background {
+    background-image: url(../img/footer-background-scaled.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    height: 1000px;
+
+    .container_big {
+        padding-top: 120px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
 </style>

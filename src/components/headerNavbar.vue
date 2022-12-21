@@ -45,6 +45,10 @@ export default {
         height: 100px;
     }
 
+    li {
+        color: $brandSecondary;
+    }
+
     img {
         width: 60%;
     }

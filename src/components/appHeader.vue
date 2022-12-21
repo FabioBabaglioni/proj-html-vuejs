@@ -7,16 +7,30 @@ export default {
 
 <template>
     <!-- sezione per inserimento immagine di sfondo -->
+    <section>
+        <!-- nav bar -->
+        <nav>
+            <!-- logo -->
+            <!-- navigazione sito con riferimento ai data-->
+        </nav>
 
-    <!-- nav bar -->
-    <!-- logo -->
-    <!-- navigazione sito con riferimento ai data-->
+        <div>
+            <!-- scritta societaria  -->
+            <!-- button -->
+        </div>
 
-    <!-- scritta societaria  -->
-    <!-- button -->
 
-    <!-- section in position absolute con informazioni delivery -->
-    <!-- section per button + e banner quadrai in position absolute -->
+        <!-- section in position absolute con informazioni delivery -->
+        <div>
+
+        </div>
+        <!-- section per button + e banner quadrai in position absolute -->
+        <div>
+
+        </div>
+    </section>
+
+
 </template>
 
 <style scoped lang="scss">

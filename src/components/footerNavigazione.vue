@@ -72,4 +72,8 @@ export default {
 
 <style scoped lang="scss">
 @use "./style/partials/variables.scss" as *;
+
+ul {
+    padding-left: 0;
+}
 </style>

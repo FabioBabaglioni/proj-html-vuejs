@@ -1,7 +1,36 @@
 <script>
 
 export default {
+    data() {
+        return {
+            infos: [
+                {
+                    primo: "Home",
 
+                },
+                {
+                    primo: "Order Online",
+
+                },
+                {
+                    primo: "About",
+
+                },
+                {
+                    primo: "News",
+
+                },
+                {
+                    primo: "Contact us",
+
+                },
+                // {
+                //     primo: `font-awesome-icon icon="fa-solid fa-cart-shopping"`
+                // }
+            ]
+        }
+
+    }
 }
 </script>
 
@@ -20,12 +49,7 @@ export default {
                 <!-- navigazione sito con riferimento ai data-->
                 <div class="col-8 d-flex align-items-center">
                     <ul class="d-flex justify-content-around info">
-                        <li class=" active">Home v</li>
-                        <li class="">Order Online</li>
-                        <li class="">About</li>
-                        <li class="">News</li>
-                        <li class="">Contact Us</li>
-                        <li><font-awesome-icon icon="fa-solid fa-cart-shopping" /></li>
+                        <li v-for="(info, index) in infos" :key="index">{{ info.primo }}</li>
                     </ul>
                 </div>
             </div>
@@ -47,6 +71,11 @@ export default {
 
     li {
         color: $brandSecondary;
+
+        &:hover {
+            color: $brandPrimary;
+            cursor: pointer;
+        }
     }
 
     img {

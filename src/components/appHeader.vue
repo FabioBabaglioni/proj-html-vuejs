@@ -7,7 +7,7 @@ export default {
 
 <template>
     <!-- sezione per inserimento immagine di sfondo -->
-    <section>
+    <section id="background">
         <!-- nav bar -->
         <nav>
             <!-- logo -->
@@ -34,5 +34,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
+#background {
+    background-image: url("../img/home-background-hero-scaled.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 800px;
+}
 </style>

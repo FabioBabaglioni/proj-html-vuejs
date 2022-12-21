@@ -35,26 +35,42 @@ export default {
 
         <!-- section in position absolute con informazioni delivery -->
         <div id="info_delivery" class="d-flex justify-content-around align-items-center">
-            <span class="text_medium">
-                <font-awesome-icon icon="fa-regular fa-clock" />
+            <div class="text_medium">
+                <span class="pe-2"><font-awesome-icon icon="fa-regular fa-clock" /></span>
                 24/7 DELIVERY
-            </span>
-            <span class="text_medium">
-                <font-awesome-icon icon="fa-solid fa-burger" />
+            </div>
+            <div class="text_medium">
+                <span class="pe-2"><font-awesome-icon icon="fa-solid fa-burger" /></span>
                 OVER 100 DISHES
-            </span>
-            <span class="text_medium">
-                <font-awesome-icon icon="fa-solid fa-mobile-screen-button" />
+            </div>
+            <div class="text_medium">
+                <span class="pe-2"><font-awesome-icon icon="fa-solid fa-mobile-screen-button" /></span>
                 IN APP ORDERING
-            </span>
-            <span class="text_medium">
-                <font-awesome-icon icon="fa-solid fa-car" />
+            </div>
+            <div class="text_medium">
+                <span class="pe-2"><font-awesome-icon icon="fa-solid fa-car" /></span>
                 FAST DELIVERY
-            </span>
+            </div>
         </div>
+
         <!-- section per button + e banner quadrai in position absolute -->
         <div>
+            <!-- banner plus -->
+            <div id="btn_plus">
+                <font-awesome-icon icon="fa-solid fa-plus" />
+            </div>
 
+            <!-- banner demos-->
+            <div class="card card_top flex-column justify-content-center">
+                <span id="prezzo"></span>
+                <div id="onSale">Demos</div>
+            </div>
+
+            <!-- banner on sale -->
+            <div class="card card_down flex-column justify-content-center">
+                <span id="prezzo">$39</span>
+                <div id="onSale">On sale</div>
+            </div>
         </div>
     </section>
 
@@ -118,6 +134,50 @@ export default {
         .text_medium {
             font-size: .8rem;
         }
+    }
+
+    #btn_plus {
+        color: $brandSecondary;
+        background-color: $brandThird;
+        border-radius: 50%;
+        padding: 15px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .card {
+        background-color: $brandSecondary;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+
+    }
+
+    .card_down {
+        position: absolute;
+        top: 200px;
+        right: 20px;
+    }
+
+    .card_top {
+        position: absolute;
+        top: 145px;
+        right: 20px;
+    }
+
+    #prezzo {
+        color: #7bc58e;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 450;
+        line-height: 20px;
+    }
+
+    #onSale {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
     }
 }
 </style>

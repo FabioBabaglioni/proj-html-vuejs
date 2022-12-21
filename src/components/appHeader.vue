@@ -1,7 +1,10 @@
 <script>
+import headerNavBar from "./headerNavbar.vue"
 
 export default {
-
+    components: {
+        headerNavBar
+    }
 }
 </script>
 
@@ -9,31 +12,26 @@ export default {
     <!-- sezione per inserimento immagine di sfondo -->
     <section id="background">
 
-        <div class="container_site pt-5">
-            <nav class="d-flex justify-content-between align-items-center">
-                <!-- logo -->
-                <img src="../img/takeout-logo.png" alt="">
+        <div class="container_site container_hero">
 
-                <!-- navigazione sito con riferimento ai data-->
+            <!-- navbar -->
+            <headerNavBar />
 
-                <ul class="d-flex">
-                    <li class="pe-5 active">Home v</li>
-                    <li class="pe-5">Order Online</li>
-                    <li class="pe-5">About</li>
-                    <li class="pe-5">News</li>
-                    <li class="pe-5">Contact Us</li>
-                </ul>
-
-            </nav>
-
-            <div>
+            <div class="d-flex align-items-center" id="scritta">
                 <!-- scritta societaria  -->
-                <!-- button -->
+                <div>
+                    <div class="text_medium">Hungry?</div>
+                    <div class="text_big co_brand">Great Food</div>
+                    <div class="text_big">Delivered</div>
+
+                    <!-- button -->
+                    <button class="btn_red btn_medium mt-4">View our menù</button>
+                </div>
+
+
+
             </div>
         </div>
-        <!-- nav bar -->
-
-
 
         <!-- section in position absolute con informazioni delivery -->
         <div>
@@ -54,15 +52,41 @@ export default {
 #background {
     background-image: url("../img/home-background-hero-scaled.jpg");
     background-size: cover;
-    background-position: bottom;
-    height: 800px;
+    background-position: top;
+
+    .container_hero {
+        height: 850px;
+    }
+
+    nav {
+        height: 100px;
+    }
 
     img {
-        width: 20%;
+        width: 60%;
     }
 
     .active {
         color: $brandPrimary;
+    }
+
+    #scritta {
+        height: calc(100% - 100px);
+
+        .text_medium {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .text_big {
+            font-size: 60px;
+            font-weight: 800;
+            line-height: 60px;
+        }
+
+        .co_brand {
+            color: $brandPrimary;
+        }
     }
 }
 </style>

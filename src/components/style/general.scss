@@ -5,3 +5,18 @@ $prefix: "mo-";
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container_site {
+    width: 70%;
+    margin: 0 auto;
+}

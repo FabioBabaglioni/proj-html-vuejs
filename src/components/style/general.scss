@@ -19,6 +19,14 @@ li {
 
 a {
     text-decoration: none;
+
+    color: $brandSecondary;
+
+    &:hover {
+        color: $brandPrimary;
+        cursor: pointer;
+    }
+
 }
 
 .container_site {

@@ -180,15 +180,6 @@ ul {
     li {
         font-size: 12px;
 
-        a {
-            color: $brandSecondary;
-
-            &:hover {
-                color: $brandPrimary;
-                cursor: pointer;
-            }
-        }
-
         .orario {
             color: $brandPrimary;
         }

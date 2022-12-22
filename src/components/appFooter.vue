@@ -20,9 +20,11 @@ export default {
             <!-- navigazione li -->
             <footerNavigazione />
 
+        </div>
+
+        <div class="container_big">
             <!-- sezione subscribe in altro componente-->
             <footerSubscribe />
-
         </div>
 
 
@@ -39,9 +41,9 @@ section {
 #background {
     background-image: url(../img/footer-background-scaled.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 
-    height: 1000px;
+    height: 1200px;
 
     .container_big {
         padding-top: 120px;

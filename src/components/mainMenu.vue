@@ -7,7 +7,7 @@ export default {
 
 <template>
     <section class="container_site pb-5">
-        <div class="d-flex justify-content-around">
+        <div class="d-flex justify-content-between">
             <h2>Menu categories</h2>
 
             <button class="btn_red btn_small">VIEW THE FULL MENU</button>

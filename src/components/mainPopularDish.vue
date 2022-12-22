@@ -17,18 +17,40 @@ export default {
                 <img class="pb-3" src="../img/skin-on-fries-400x571.jpg" alt="">
                 <div class="title pb-2">Skin On Fries</div>
                 <div class="price">$3.00 _ $6.00</div>
+
+                <a href="#">
+                    <div class="badge">
+                        <font-awesome-icon icon="fa-solid fa-square-check" /> <br>
+                        VIEW CART
+                    </div>
+                </a>
+
             </div>
 
             <div class="card mx-4">
                 <img class="pb-3" src="../img/choco-cookie-frappe-400x571.jpg" alt="">
                 <div class="title pb-2">Choco Cookie Frappe</div>
                 <div class="price">$4.99</div>
+
+                <a href="#">
+                    <div class="badge">
+                        <font-awesome-icon icon="fa-solid fa-square-check" /> <br>
+                        VIEW CART
+                    </div>
+                </a>
             </div>
 
             <div class="card">
                 <img class="pb-3" src="../img/donut-burger-400x571.jpg" alt="">
                 <div class="title pb-2">The Donut Burger</div>
                 <div class="price pb-5">$6.99</div>
+
+                <a href="#">
+                    <div class="badge">
+                        <font-awesome-icon icon="fa-solid fa-square-check" /> <br>
+                        VIEW CART
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -62,6 +84,29 @@ section {
         text-align: center;
         width: calc((100% / 3) - 20px);
         border: none;
+        position: relative;
+
+        .badge {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 15px;
+            display: none;
+
+            .fa-square-check {
+                font-size: 40px;
+                color: black;
+                padding-bottom: 10px;
+            }
+        }
+
+        &:hover {
+            .badge {
+                display: block;
+            }
+        }
     }
 
     .title {

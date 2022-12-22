@@ -14,7 +14,7 @@ export default {
         </div>
 
         <!-- container card -->
-        <div class="d-flex flex-wrap pt-5">
+        <div class="d-flex flex-wrap py-5">
             <div class="card">
                 <img class="img_card" src="../img/appetizers-menu-background.jpg" alt="">
                 <div class="black"></div>
@@ -65,6 +65,27 @@ export default {
 
         </div>
 
+        <div class="d-flex justify-content-around">
+            <div class="badge">
+                <font-awesome-icon class="pb-4 icon" icon="fa-solid fa-leaf" />
+                <div class="type">Vegetarian</div>
+            </div>
+
+            <div class="badge">
+                <font-awesome-icon class="pb-4 icon" icon="fa-solid fa-wheat-awn" />
+                <div class="type">Gluten free</div>
+            </div>
+
+            <div class="badge">
+                <font-awesome-icon class="pb-4 icon" icon="fa-solid fa-bottle-water" />
+                <div class="type">Dairy free</div>
+            </div>
+
+            <div class="badge">
+                <font-awesome-icon class="pb-4 icon" icon="fa-solid fa-bacon" />
+                <div class="type">Keto friendly</div>
+            </div>
+        </div>
 
     </section>
 </template>
@@ -90,8 +111,6 @@ section {
         margin: 5px;
         position: relative;
 
-        img {}
-
         .black {
             width: 100%;
             height: 100%;
@@ -111,6 +130,36 @@ section {
             font-weight: 500;
 
 
+        }
+    }
+
+    .badge {
+        text-align: center;
+
+        .icon {
+            font-size: 60px;
+        }
+
+        .fa-leaf {
+            color: #8fbf70;
+        }
+
+        .fa-wheat-awn {
+            color: #ffc107;
+        }
+
+        .fa-bottle-water {
+            color: #44a2ea;
+        }
+
+        .fa-bacon {
+            color: #a1581c;
+        }
+
+        .type {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
         }
     }
 }

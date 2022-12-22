@@ -13,6 +13,7 @@ export default {
             <button class="btn_red btn_small">VIEW THE FULL MENU</button>
         </div>
 
+        <!-- container card -->
         <div class="d-flex flex-wrap pt-5">
             <div class="card">
                 <img class="img_card" src="../img/appetizers-menu-background.jpg" alt="">
@@ -20,7 +21,51 @@ export default {
                 <div class="title">APPETIZERS</div>
             </div>
 
+            <div class="card">
+                <img class="img_card" src="../img/burgers-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">BURGERS</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/pizza-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">PIZZA</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/fries-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">FRIES</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/sides-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">SIDES</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/desserts-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">DESSERTS</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/beverages-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">BEVERAGES</div>
+            </div>
+
+            <div class="card">
+                <img class="img_card" src="../img/specials-menu-background.jpg" alt="">
+                <div class="black"></div>
+                <div class="title">SPECIALS</div>
+            </div>
+
         </div>
+
+
     </section>
 </template>
 
@@ -41,7 +86,11 @@ section {
 
     .card {
         width: calc((100% / 4) - 10px);
+
+        margin: 5px;
         position: relative;
+
+        img {}
 
         .black {
             width: 100%;

@@ -37,7 +37,7 @@ export default {
 @use "./style/partials/variables.scss" as *;
 
 section {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 h2 {
@@ -58,6 +58,13 @@ h2 {
 
     p {
         color: rgb(160, 160, 160);
+        display: none;
+    }
+
+    &:hover {
+        p {
+            display: block;
+        }
     }
 }
 

@@ -18,7 +18,24 @@ export default {
                 <div class="title pb-2">Skin On Fries</div>
                 <div class="price">$3.00 _ $6.00</div>
             </div>
+
+            <div class="card mx-4">
+                <img class="pb-3" src="../img/choco-cookie-frappe-400x571.jpg" alt="">
+                <div class="title pb-2">Choco Cookie Frappe</div>
+                <div class="price">$4.99</div>
+            </div>
+
+            <div class="card">
+                <img class="pb-3" src="../img/donut-burger-400x571.jpg" alt="">
+                <div class="title pb-2">The Donut Burger</div>
+                <div class="price pb-5">$6.99</div>
+            </div>
         </div>
+
+        <div class="text-center">
+            <button class="btn_red btn_medium ">START YOUR ORDER</button>
+        </div>
+
     </section>
 
 </template>
@@ -37,13 +54,13 @@ section {
 
     .card {
         text-align: center;
-        width: calc((100% / 3) - 10px);
+        width: calc((100% / 3) - 20px);
         border: none;
     }
 
     .title {
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .price {

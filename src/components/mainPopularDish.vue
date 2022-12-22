@@ -32,11 +32,14 @@ export default {
             </div>
         </div>
 
-        <div class="text-center">
+        <div class="text-center pb-5">
             <button class="btn_red btn_medium ">START YOUR ORDER</button>
         </div>
 
     </section>
+
+    <!-- jumbotron -->
+    <section id="background"></section>
 
 </template>
 
@@ -67,6 +70,12 @@ section {
         font-size: 18px;
         color: $brandThird;
     }
+}
 
+#background {
+    background-image: url(../img/first-order-background-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
 }
 </style>

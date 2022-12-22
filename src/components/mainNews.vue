@@ -10,7 +10,13 @@ export default {
         <div class="d-flex justify-content-between pb-5">
             <h2>Lates News</h2>
 
-            <button class="btn_red btn_small">READ MORE NEWS</button>
+            <div>
+                <button class="btn_red btn_medium">
+                    READ MORE NEWS
+                    <span class="ps-2 none"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
+                </button>
+            </div>
+
         </div>
 
         <div class="d-flex pb-5">

@@ -33,7 +33,10 @@ export default {
         </div>
 
         <div class="text-center pb-5">
-            <button class="btn_red btn_medium ">START YOUR ORDER</button>
+            <button class="btn_red btn_medium ">
+                START YOUR ORDER
+                <span class="ps-2 none"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
+            </button>
         </div>
 
     </section>

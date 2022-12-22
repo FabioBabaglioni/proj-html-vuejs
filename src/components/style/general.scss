@@ -34,11 +34,21 @@ a {
     margin: 0 auto;
 }
 
+.none {
+    display: none;
+}
+
 .btn_red {
     background-color: $brandThird;
     border-radius: 40px;
     border: solid 1px $brandThird;
     color: $brandSecondary;
+
+    &:hover {
+        .none {
+            display: inline;
+        }
+    }
 
 }
 

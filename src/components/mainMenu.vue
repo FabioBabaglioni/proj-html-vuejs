@@ -10,7 +10,13 @@ export default {
         <div class="d-flex justify-content-between">
             <h2>Menu categories</h2>
 
-            <button class="btn_red btn_small">VIEW THE FULL MENU</button>
+            <div>
+                <button class="btn_red btn_medium">
+                    VIEW THE FULL MENU
+                    <span class="ps-2 none"><font-awesome-icon icon="fa-solid fa-circle-right" /></span>
+                </button>
+            </div>
+
         </div>
 
         <!-- container card -->

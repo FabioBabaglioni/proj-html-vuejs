@@ -9,6 +9,11 @@ import { store } from './store'
 export default {
   components: {
     appHeader, appMain, appFooter
+  },
+  data() {
+    return {
+      store
+    }
   }
 }
 </script>

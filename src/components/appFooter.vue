@@ -1,12 +1,17 @@
 <script>
 import footerNavigazione from "./footerNavigazione.vue"
 import footerSubscribe from "./footerSubscribe.vue"
-
+import { store } from "../store"
 
 
 export default {
     components: {
         footerNavigazione, footerSubscribe
+    },
+    data() {
+        return {
+            store
+        }
     }
 }
 </script>
@@ -18,7 +23,7 @@ export default {
         <div class="container_big d-flex justify-content-between">
 
             <!-- navigazione li -->
-            <footerNavigazione />
+            <footerNavigazione :dati="store.orders" />
 
         </div>
 

@@ -1,7 +1,9 @@
 <script>
 
 export default {
-
+    props: {
+        cards: Object,
+    }
 }
 </script>
 
@@ -21,52 +23,11 @@ export default {
 
         <!-- container card -->
         <div class="d-flex flex-wrap py-5">
-            <div class="card">
-                <img class="img_card" src="../img/appetizers-menu-background.jpg" alt="">
+            <div class="card" v-for="(card, index) in cards" :key="index">
+                <img class="img_card" :src="card.img" :alt="card.title">
                 <div class="black"></div>
-                <div class="title">APPETIZERS</div>
-            </div>
+                <a class="title" :href="card.url">{{ card.title }}</a>
 
-            <div class="card">
-                <img class="img_card" src="../img/burgers-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">BURGERS</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/pizza-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">PIZZA</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/fries-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">FRIES</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/sides-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">SIDES</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/desserts-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">DESSERTS</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/beverages-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">BEVERAGES</div>
-            </div>
-
-            <div class="card">
-                <img class="img_card" src="../img/specials-menu-background.jpg" alt="">
-                <div class="black"></div>
-                <div class="title">SPECIALS</div>
             </div>
 
         </div>
@@ -131,11 +92,8 @@ section {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: $brandSecondary;
             font-size: 18px;
             font-weight: 500;
-
-
         }
     }
 

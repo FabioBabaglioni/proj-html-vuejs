@@ -3,40 +3,6 @@
 export default {
     data() {
         return {
-            orders: [
-                {
-                    li: "Apetizer",
-                    href: "#"
-                },
-                {
-                    li: "Burgers",
-                    href: "#"
-                },
-                {
-                    li: "Pizza",
-                    href: "#"
-                },
-                {
-                    li: "fries",
-                    href: "#"
-                },
-                {
-                    li: "Sides",
-                    href: "#"
-                },
-                {
-                    li: "Dessert",
-                    href: "#"
-                },
-                {
-                    li: "Beverages",
-                    href: "#"
-                },
-                {
-                    li: "Specials",
-                    href: "#"
-                },
-            ],
             navigates: [
                 {
                     li: "Home",
@@ -113,6 +79,9 @@ export default {
 
             ]
         }
+    },
+    props: {
+        dati: Object,
     }
 }
 </script>
@@ -123,7 +92,7 @@ export default {
     <div>
         <span class="pb-5">ORDER ONLINE</span>
         <ul class="pt-4">
-            <li class="pb-4" v-for="(order, index) in orders" :key="index"> <a :href="order.href">{{ order.li }}</a>
+            <li class="pb-4" v-for="(order, index) in dati" :key="index"> <a :href="order.url">{{ order.title }}</a>
             </li>
         </ul>
     </div>
